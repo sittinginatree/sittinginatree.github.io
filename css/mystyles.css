@@ -2,7 +2,14 @@ html, body {
     height: 100%;
        margin:0;
        padding:0;
-       background:#87947f;
+    
+   }
+
+
+   body {
+    background-color: #87947f;
+    /* NAME | DURATION | FUNCTION | DELAY | REPEAT */
+    animation: morph 10s linear 1s infinite;
    }
 
 .flex-cont {
@@ -42,17 +49,29 @@ a:hover {
 
 }
 
+@keyframes morph {
+    0% { background-color:#87947f; }
+    10%{ background-color:#7f948c; }
+    20%{ background-color:#887f94; }
+    30%{ background-color:#947f93; }
+    40%{ background-color:#947f86; }
+    50%{ background-color:#947f7f; }
+    60%{ background-color:#8e7f94; }
+    70%{ background-color:#837f94; }
+    80%{ background-color:#7f8d94; }
+    90%{ background-color:#87947f; }
+    100%{background-color:#87947f; }
+  }
+  
 
 @media only screen and (max-width: 500px)
 
-{
+{h1
+     {
+         font-size: 3.2em;
+        }
+}   
 
-    h1 {
-       
-        font-size: 3.2em;
-
-    }
-}
 
 
 
